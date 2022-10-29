@@ -1,0 +1,114 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+* {
+    margin: 0%;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    align-items: end;
+    padding: 10px 20px;
+    /* margin: 10px 20px; */
+
+}
+
+
+.brand {
+    display: flex;
+    align-items: end;
+}
+.brand img {
+    margin-right: 4px;
+}
+
+
+.search_box {
+    padding-bottom: 6px;
+    position: relative;
+    right: 16px;
+}
+.search_box i {
+    position: relative;
+    left: 33px;
+}
+.search_box input {
+    padding: 7px 9px 7px 35px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+
+.header_right img {
+    width: 45px;
+    border-radius: 23px;
+}
+.header_right  i {
+    position: relative;
+    bottom: 14px;
+    margin-left: 5px;
+}
+
+
+/* MAIN */
+
+/* section heading */
+.section_heading {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid blue;
+    /* margin: 0px 20px; */
+    padding: 0px 26px;
+}
+
+/* section grid */
+.section_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 404px) ;
+    gap: 62px;
+    /* padding: 27px; */
+    margin: 50px;
+    border: 2px solid red;
+}
+
+.section_item {
+    display: grid;
+    grid-template-columns: 100px 250px auto;
+    border: 2px solid blue;
+    grid-template-rows: 120px auto;
+
+}
+
+.book_description {
+    margin-top: 10px;
+    margin-left: 20px;
+    line-height: 1.7;
+}
+
+.section_item img {
+    width: 100px;
+}
+
+.section_item button {
+    align-self: start;
+    margin-top: 15px;
+    margin-right: 21px;
+}
+
+
+.section_item select{
+    width: 100px;
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    justify-self: end;
+    margin-right: 15px;
+    margin-bottom: 11px;
+    font-size: 0.9rem;
+}
+
+
