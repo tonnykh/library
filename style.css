@@ -7,14 +7,23 @@
     margin: 0%;
 }
 
+/* CONTAINER */
+.container {
+    /* background-color: rgb(255,255,255); */
+    font-family: oxygen;
+}
+
+
 /* HEADER */
 header {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     align-items: end;
-    padding: 10px 20px;
+    padding: 30px 34px 15px 34px;
     /* margin: 10px 20px; */
+    margin-bottom: 40px;
+
 
 }
 
@@ -22,6 +31,12 @@ header {
 .brand {
     display: flex;
     align-items: end;
+}
+.brand h1 {
+    background-image: linear-gradient(45deg, #ca65f3, #2D87EF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
 }
 .brand img {
     margin-right: 4px;
@@ -35,23 +50,33 @@ header {
 }
 .search_box i {
     position: relative;
-    left: 33px;
+    left: 36px;
+    color: #B8BDC3;
 }
 .search_box input {
-    padding: 7px 9px 7px 35px;
+    padding: 10px 10px 10px 41px;
     width: 250px;
     font-size: 1rem;
+    border-radius: 26px;
+    border-style: none;
+    box-shadow: 3px 3px 15px 1px #ececf9be,
+                -3px -3px 15px 1px #ececf9c3;
+}
+
+.search_box input::placeholder {
+    color: #BABFC4;
 }
 
 
 .header_right img {
-    width: 45px;
-    border-radius: 23px;
+    width: 60px;
+    border-radius: 20px;
 }
 .header_right  i {
     position: relative;
-    bottom: 14px;
+    bottom: 27px;
     margin-left: 5px;
+    color: #2D87EF;
 }
 
 
@@ -61,26 +86,69 @@ header {
 .section_heading {
     display: flex;
     justify-content: space-between;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* margin: 0px 20px; */
-    padding: 0px 26px;
+    padding: 0px 59px;
+    margin-bottom: 46px;
 }
+
+.section_heading h2 {
+    align-self: center;
+    font-size: 1.7rem;
+   
+}
+.section_heading h2 i {
+    background-image: linear-gradient(45deg, #ca65f3, #2D87EF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: flex-end;
+    position: relative;
+    top: 1px;
+}
+
+
+.section_heading button {
+    background-image: linear-gradient(to right, #ca65f3, #2D87EF);
+    color: white;
+    border-style: none;
+    border-radius: 9px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+
+/* 
+    background-image: linear-gradient(45deg, #ca65f3, #2D87EF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent */
+}
+
+.section_heading i {
+    
+    margin-right: 3px;
+}
+
 
 /* section grid */
 .section_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 404px) ;
-    gap: 62px;
+    grid-template-columns: repeat(auto-fill, 418px);
+    gap: 34px;
     /* padding: 27px; */
-    margin: 50px;
-    border: 2px solid red;
+    margin: 59px;
+    margin-top: 30px;
+    /* border: 2px solid red; */
 }
 
 .section_item {
     display: grid;
-    grid-template-columns: 100px 250px auto;
-    border: 2px solid blue;
+    grid-template-columns: 117px 250px auto;
+    /* border: 2px solid blue; */
     grid-template-rows: 120px auto;
+
+    border-radius: 15px;
+    box-shadow: 6px 6px 100px 3px #adb9e18d, -6px -6px 100px 3px #adb8dc8d;
 
 }
 
@@ -89,26 +157,61 @@ header {
     margin-left: 20px;
     line-height: 1.7;
 }
+.book_description h3 {
+    font-size: 1.2rem;
+}
+.book_description p {
+    color: #717C89;
+    font-size: 0.8rem;
+}
+.book_description .author_name {
+    font-size: 1rem;
+}
+
+
 
 .section_item img {
     width: 100px;
+    position: relative;
+    bottom: 14px;
+    left: 17px;
+    border-radius: 5px;
+    box-shadow: 17px 10px 30px -5px rgb(142, 134, 167);
 }
 
 .section_item button {
+    font-size: 1.1rem;
     align-self: start;
     margin-top: 15px;
-    margin-right: 21px;
+    /* margin-right: 0px; */
+    color: #a568e6dd;
+    border-style: none;
+    background-color: white;
 }
 
 
 .section_item select{
-    width: 100px;
+    width: 124px;
     grid-row: 2 / -1;
     grid-column: 2 / -1;
     justify-self: end;
-    margin-right: 15px;
-    margin-bottom: 11px;
+    margin-right: 17px;
+    /* margin-bottom: 15px; */
     font-size: 0.9rem;
+    border-radius: 16px;
+    padding: 5px 7px;
+
+    border: double 2.3px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ca65f3, #2D87EF);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    color: #8D75F1;
+    /* border-right: 20px solid transparent white; */
+
+    position: relative;
+    bottom: 15px;
 }
+
 
 
