@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
 
+    
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- JS -->
-    <script src="index.js" render></script>
+    <script src="index.js" defer></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
@@ -26,7 +28,7 @@
 <body>
     
 
-    <div class="container">
+    <div class="main_container">
 
         <header>
 
@@ -54,7 +56,11 @@
 
                 <h2>Bookshelves <i class="bi bi-play-fill"></i></h2>
 
-                <button><i class="bi bi-plus-lg"></i> Add New Book</button>
+                <button class="btn_add_new_book"><i class="bi bi-plus-lg" id="btn"></i> Add New Book</button>
+
+
+                
+
 
             </section>
 
@@ -138,6 +144,43 @@
         </main>
 
     </div>
+
+    <!-- Modal -->
+    <section class="modal_overlay">
+
+        <form action="" id="add_book_form">
+
+            <!-- <span class="close">&times;</span> -->
+
+            <h2>Add new book</h2>
+
+            <label for="title">Book Name</label>
+            <input type="text" name="title" id="title" required maxlength="100">
+
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" required maxlength="100">
+
+            <label for="pages">Total pages</label>
+            <input type="number" name="pages" id="pages" required maxlength="10000">
+
+            <label for="book_status">Book status</label>
+            <select id="book_status" name="book_status">
+                <option value="read">Read</option>
+                <option value="reading">Reading</option>
+                <option value="wantToRead">Want to read</option>
+            </select>
+
+
+            <img src="https://mlksathil.github.io/library/assets/web/svg-images/book/book3.svg" alt="Fig: Book cover image.">
+            <label for="image_url">Edit Book cover Image</label>
+            <input type="url" name="image_url" id="image_url" placeholder="Paste a Link">
+
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
 
 </body>
 
