@@ -104,7 +104,13 @@ function bookFormSubmit(e) {
 }
 
 
+const deleteBtn = document.querySelectorAll(".bi-trash");
 
+deleteBtn.forEach(function(item) {
+    item.addEventListener('click', function() {
+        item.parentNode.parentNode.remove();
+    })
+});
 
 
 
